@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="images/favicon/favicon-32x32.png" type="image/x-icon">
+    <script src="script/script.js"></script>
+    <title>Curso PL/SQL ORACLE</title>
+</head>
+<body>
+    <header>
+        <img src="images/logoOracle.png" alt="">
+        <h1>Curso PL-SQL ORACLE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pages/linkDB.html">LINKS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>Aula 01</h1>
+            <h2>Fundamentos básicos do SQL</h2>
+            <ul>
+                <li>Oque são dados? O que são bancos de dados?</li>
+                <li>Oque é o SQL? O que é uma QUERY?</li>
+                <li>Termos importantes do SQL</li>
+                <li>SQL vs MySQL, SQL SERVER, ORACLE e POSTGRESQL</li>
+                <li>Por que aprender SQL?</li>
+            </ul>
+            <p><a href="" download="11-30 - Apostila Curso Básico de SQL - Aula 1.pdf" type="aplication/pdf" rel="internal" target="_blank">PDF AULA 01</a></p>
+            <hr>
+            <h3>Oque é um dado?</h3>
+            <ul>
+                <p>Um  dado <strong>é um conhecimento</strong> que temos sobre alguma coisa.</p>
+                <p>Com esse conhecimento, chegamos a uma <strong>conclusão</strong>. E com essa conclusão, tomamos alguma <strong>ação</strong>.</p>
+            </ul>
+            <h3>O que é um Banco de Dados?</h3>
+        </article>
+    </main>
+    <footer>
+        <p>Developed by Iury Pichitelli</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

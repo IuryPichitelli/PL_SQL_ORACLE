@@ -30,6 +30,10 @@ p, li{
     color: var(--cor-secundary);
 }
 
+p{
+    line-height: 24pt;
+}
+
 ul, ol{
     list-style-position: inside;
 }
@@ -148,7 +152,7 @@ article h3::before{
 }
 
 article ul{
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 article ul li{
@@ -185,6 +189,18 @@ article .downloadList li a::before{
     content: "💿 ";
 }
 
+article .linkPdfAula{
+    background-color: var(--cor-primary);
+    text-decoration: none;
+    color: var(--cor-secundary);
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+article .linkPdfAula::before{
+    content: "📘 ";
+}
 /**********************************************************************************/
 /*----------------------------------- FOOTER -------------------------------------*/ 
 /**********************************************************************************/
