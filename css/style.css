@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primary: #af001d;
+    --cor-secundary: #f5f5f5;
+    --cor-third:black;
+
+    --cor-backg: #202124;
+    --cor-main: #292A2D;
+
+    --cor-text: black;
+    --font-text: arial, sans-serif;
+    --font-title: "Orbitron", sans-serif;
+}
+
+/* Default tags */
+
+p, li{
+    text-align: justify;
+    font-family: var(--font-text);
+    color: var(--cor-secundary);
+}
+
+ul, ol{
+    list-style-position: inside;
+}
+
+
+/**********************************************************************************/
+/*------------------------------------ BODY --------------------------------------*/ 
+/**********************************************************************************/
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--cor-backg);
+}
+
+/**********************************************************************************/
+/*----------------------------------- HEADER -------------------------------------*/ 
+/**********************************************************************************/
+header{
+    height: 100px;
+    width: 100%;
+    background-color: var(--cor-third);
+    border: 1px solid gray;
+}
+
+header h1{
+    font-family: var(--font-title);
+    color: var(--cor-secundary);
+    text-align: center;
+    padding: 30px 0px;
+}
+
+header img{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 200px;
+}
+
+/**********************************************************************************/
+/*------------------------------------ NAV ---------------------------------------*/ 
+/**********************************************************************************/
+
+nav{
+    background-color: var(--cor-primary);
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    font-family: var(--font-title);
+    color: var(--cor-secundary);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+/**********************************************************************************/
+/*------------------------------------ MAIN --------------------------------------*/ 
+/**********************************************************************************/
+
+main{
+    flex: 1;
+    animation: fadeIn .7s ease-in-out;
+    background-color: var(--cor-main);
+    min-width: 320px;
+    width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/**********************************************************************************/
+/*--------------------------------- ARTICLE --------------------------------------*/ 
+/**********************************************************************************/
+
+article h2{
+    font-family: var(--font-title);
+    color: var(--cor-secundary);
+    border-left: 8px solid #af001d;
+    padding-left: 5px;
+    margin: 20px;
+}
+
+/**********************************************************************************/
+/*----------------------------------- FOOTER -------------------------------------*/ 
+/**********************************************************************************/
+
+footer{
+    background-color: #af001d;
+    height: 50px;
+    font-family: var(--font-title);
+    color: var(--cor-secundary);
+}
+
+footer p{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/**********************************************************************************/
+/*-------------------------------- ANIMATIONS ------------------------------------*/ 
+/**********************************************************************************/
+
+@keyframes fadeIn{
+    from{ opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
