@@ -151,11 +151,11 @@ article h3::before{
     content: "📌 ";
 }
 
-article ul{
+article ul, ol{
     padding: 20px 20px 0px 20px;
 }
 
-article ul li{
+article ul li, ol li{
     line-height: 18pt;
 }
 
@@ -177,7 +177,6 @@ article .downloadList li a{
     width: max-content;
     border-radius: 10px;
     background-color: var(--cor-backg);padding: 5px 10px 5px 4px;
-    
 }
 
 article .downloadList p{
@@ -195,7 +194,6 @@ article .linkPdfAula{
     color: var(--cor-secundary);
     padding: 8px;
     border-radius: 10px;
-
 }
 
 article .linkPdfAula::before{
