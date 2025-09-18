@@ -155,6 +155,36 @@ article ul li{
     line-height: 18pt;
 }
 
+article .downloadList{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+article .downloadList li{
+    list-style-type: none;
+    margin: 15px 0px;
+    margin-left: 10px;
+}
+
+article .downloadList li a{
+    text-decoration: none;
+    color: aqua;
+    border: 1px solid gray;
+    width: max-content;
+    border-radius: 10px;
+    background-color: var(--cor-backg);padding: 5px 10px 5px 4px;
+    
+}
+
+article .downloadList p{
+    margin: 0px 0px 10px 0px;
+    font-family: var(--font-text);
+}
+
+article .downloadList li a::before{
+    content: "💿 ";
+}
+
 /**********************************************************************************/
 /*----------------------------------- FOOTER -------------------------------------*/ 
 /**********************************************************************************/
