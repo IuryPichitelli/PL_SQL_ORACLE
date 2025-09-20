@@ -1,9 +1,9 @@
 function iframeFullScreen(){
-    const iframeContainer = document.querySelector(".iframeVideo")[0];
-    const iframeVideo = document.getElementsByTagName('iframe')[0];
+    const iframeContainer = document.getElementById("iframeVideo")[0];
+    const iframeVideo = document.getElementsByClassName('iframe')[0];
 
     iframeContainer.style.margin = "-20px";
-    iframeVideo.style.borderRadius = "0px";
+    iframeVideo.style.width = "80%";
 }
 
 const buttonIframeExpansion = document.querySelector(".buttonIframeExpansion");
