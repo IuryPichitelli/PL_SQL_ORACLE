@@ -56,7 +56,6 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--cor-backg);
-    
 }
 
 /**********************************************************************************/
@@ -129,8 +128,8 @@ main{
     flex: 1;
     animation: fadeIn .7s ease-in-out;
     background-color: var(--cor-main);
-    min-width: 320px;
-    width: 1000px;
+    max-width: 1000px;
+    width: calc(100% - 20px);
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
@@ -198,6 +197,7 @@ article ul ul {
 article .downloadList{
     outline: 1px solid gray;
     border-radius: 10px;
+    padding: 10px
 }
 
 article .downloadList li{
