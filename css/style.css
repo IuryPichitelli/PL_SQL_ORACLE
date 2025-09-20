@@ -235,6 +235,23 @@ article .linkPdfAula{
 article .linkPdfAula::before{
     content: "📘 ";
 }
+
+/* -- iframe video -- */
+
+article .iframeVideo{
+    outline: 1px solid rgb(255, 0, 0);
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+article .iframeVideo > iframe{
+    position: relative;
+    width: 100%;
+    height: ;    
+}
+
 /**********************************************************************************/
 /*----------------------------------- FOOTER -------------------------------------*/ 
 /**********************************************************************************/
