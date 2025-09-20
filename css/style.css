@@ -65,6 +65,10 @@ strong{
         content: "";
     }
 
+    nav ul li{
+        margin-left: 5px;
+    }
+
 }
 
 @media (mIN-width: 890px){
