@@ -239,17 +239,18 @@ article .linkPdfAula::before{
 /* -- iframe video -- */
 
 article .iframeVideo{
-    outline: 1px solid rgb(255, 0, 0);
-    width: 100%;
-    height: 100%;
+    position: relative;
+    padding-bottom: 58%;
     margin: 20px 0px;
-    border-radius: 10px;
 }
 
 article .iframeVideo > iframe{
-    position: relative;
+    position: absolute;
+    top: 0%;  
+    left: 0%;
     width: 100%;
-    height: ;    
+    height: 99%;
+    border-radius: 10px;outline: 1px solid gray;
 }
 
 /**********************************************************************************/
