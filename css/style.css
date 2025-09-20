@@ -10,7 +10,7 @@
 
 :root{
     --cor-primary: #af001d;
-
+    --cor-primaty-hover:#d80024;
     --cor-secundary: #f5f5f5;
     --cor-third:rgba(0, 0, 0, 0.534);
 
@@ -104,6 +104,12 @@ nav a{
     text-decoration: none;
     display: block;
     padding: 5px 10px;
+    transition: background-color .3s ease;
+}
+
+nav a:hover{
+    background-color: var(--cor-primaty-hover);
+    outline: 1px solid gray;
 }
 
 nav ul{
@@ -112,6 +118,7 @@ nav ul{
 
 nav li{
     list-style-type: none;
+    margin-left: 10px;
 }
 
 /**********************************************************************************/
