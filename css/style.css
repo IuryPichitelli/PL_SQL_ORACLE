@@ -66,7 +66,7 @@ header{
     height: 100px;
     width: 100%;
     background-color: var(--cor-third);
-    border: 1px solid gray;
+    outline: 1px solid gray;
 }
 
 header h1{
@@ -89,7 +89,7 @@ header img{
 
 nav{
     background-color: var(--cor-primary);
-    border: 1px solid gray;
+    outline: 1px solid gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +134,7 @@ main{
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid gray;
+    outline: 1px solid gray;
 }
 
 /**********************************************************************************/
@@ -196,7 +196,7 @@ article ul ul {
 }
 
 article .downloadList{
-    border: 1px solid gray;
+    outline: 1px solid gray;
     border-radius: 10px;
 }
 
@@ -209,7 +209,7 @@ article .downloadList li{
 article .downloadList li a{
     text-decoration: none;
     color: aqua;
-    border: 1px solid gray;
+    outline: 1px solid gray;
     width: max-content;
     border-radius: 10px;
     background-color: var(--cor-backg);padding: 5px 10px 5px 4px;
