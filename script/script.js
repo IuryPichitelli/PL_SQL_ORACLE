@@ -1,13 +1,12 @@
 function iframeFullScreen(){
-    const iframeContainer = document.getElementsByClassName("iframeVideo");
-    const iframeVideo = document.getElementsByTagName('iframe');
+    const iframeContainer = document.querySelector(".iframeVideo")[0];
+    const iframeVideo = document.getElementsByTagName('iframe')[0];
 
     iframeContainer.style.margin = "-20px";
     iframeVideo.style.borderRadius = "0px";
 }
 
-const buttonIframeExpansion = document.getElementsByClassName("buttonIframeExpansion");
-
-buttonIframeExpansion.EventeListener('click', function(){
-    iframeFullScreen();
-});
+const buttonIframeExpansion = document.querySelector(".buttonIframeExpansion");
+if(buttonIframeExpansion){
+    buttonIframeExpansion.addEventListener('click', iframeFullScreen);
+}

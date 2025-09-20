@@ -10,7 +10,7 @@
 
 :root{
     --cor-primary: #af001d;
-    --cor-primaty-hover:#d80024;
+    --cor-primary-hover:#d80024;
     --cor-secundary: #f5f5f5;
     --cor-third:rgba(0, 0, 0, 0.534);
 
@@ -94,6 +94,7 @@ nav{
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav a{
@@ -107,7 +108,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: var(--cor-primaty-hover);
+    background-color: var(--cor-primary-hover);
     outline: 1px solid gray;
 }
 
@@ -241,7 +242,7 @@ article .linkPdfAula::before{
 article .iframeVideo{
     position: relative;
     padding-bottom: 58%;
-    margin: 20px -50px;
+    margin: 20px 0px 40px 20px;
 }
 
 article .iframeVideo > iframe{
@@ -250,15 +251,27 @@ article .iframeVideo > iframe{
     left: 0%;
     width: 100%;
     height: 99%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 10px;
     outline: 1px solid gray;
 }
 
 .buttonIframeExpansion{
-    color: red;
+    font-family: var(--font-text);
+    color: var(--cor-secundary);
+    text-decoration: none;
+    background-color: var(--cor-primary);
+    padding: 5px 10px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid gray;
     position: absolute;
-    bottom: -20px;
-    right: 0;
+    bottom: -25px;
+    right: -1px;
+}
+
+.buttonIframeExpansion:active{
+    transform: scale(.97); 
+    background-color: var(--cor-primary-hover);
+    transition:  transform .1s ease;
 }
 
 /**********************************************************************************/
