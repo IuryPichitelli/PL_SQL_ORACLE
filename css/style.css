@@ -13,6 +13,7 @@
     --cor-primary-hover:#d80024;
     --cor-secundary: #f5f5f5;
     --cor-third:rgba(0, 0, 0, 0.534);
+    --cor-strong:rgb(206, 59, 59);
 
     --cor-backg: #202124;
     --cor-main: #292A2D;
@@ -46,6 +47,38 @@ hr{
 html{
     scrollbar-gutter: stable;
 }
+
+strong{
+    color: var(--cor-strong);
+}
+
+/**********************************************************************************/
+/*------------------------- TELA MAIOR/MENOR QUE 890px ---------------------------*/ 
+/**********************************************************************************/
+
+@media (max-width: 890px){
+    header img{
+        display: none;
+    }
+
+    nav ul li a::before{
+        content: "";
+    }
+
+}
+
+@media (mIN-width: 890px){
+
+    nav ul li a::before{
+        content: "AULA ";
+    }
+
+    nav ul li .beforeLinksWithoutAula::before{
+        content: "";
+    }
+    
+}
+
 
 /**********************************************************************************/
 /*------------------------------------ BODY --------------------------------------*/ 
@@ -161,7 +194,7 @@ article h3{
     font-family: var(--font-title);
     color: var(--cor-secundary);
     padding-left: 10px;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 article h3::before{
@@ -172,7 +205,15 @@ article h4{
     font-family: var(--font-text);
     color: var(--cor-secundary);
     padding-left: 10px;
-    margin-top: 20px;
+    margin: 20px 0px;
+}
+
+article img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin: 20px 0px;
+    border: 1px solid gray;
 }
 
 article .listWithH4{
@@ -184,7 +225,7 @@ article .listWithH4 li{
 }
 
 article ul, ol{
-    padding: 20px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 article ul li, ol li{

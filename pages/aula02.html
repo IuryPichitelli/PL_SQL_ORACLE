@@ -15,14 +15,14 @@
     </header>
     <nav>
         <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="aula01.html">AULA 01</a></li>
-            <li><a href="aula02.html">AULA 02</a></li>  
-            <li><a href="aula03.html">AULA 03</a></li>
-            <li><a href="aula04.html">AULA 04</a></li>
-            <li><a href="aula05.html">AULA 05</a></li>
-            <li><a href="aula06.html">AULA 06</a></li>          
-            <li><a href="linkDB.html">LINKS</a></li>
+            <li><a class="beforeLinksWithoutAula" href="../index.html">HOME</a></li>
+            <li><a href="aula01.html">01</a></li>
+            <li><a href="aula02.html">02</a></li>  
+            <li><a href="aula03.html">03</a></li>
+            <li><a href="aula04.html">04</a></li>
+            <li><a href="aula05.html">05</a></li>
+            <li><a href="aula06.html">06</a></li>          
+            <li><a class="beforeLinksWithoutAula" href="linkDB.html">LINKS</a></li>
         </ul>
     </nav>
     <main>
@@ -35,20 +35,41 @@
             </div>
             <hr>
             <h2>Anotações da aula</h2>
-            <h3>Oque é um dado?</h3>
+            <h3>Criando usuário SYS</h3>
             <ul>
-                <p>Um  dado <strong>é um conhecimento</strong> que temos sobre alguma coisa.</p>
-                <p>Com esse conhecimento, chegamos a uma <strong>conclusão</strong>. E com essa conclusão, tomamos alguma <strong>ação</strong>.</p>
+                <p>Para criar o usuário admin do sistema, teremos que colocar as seguintes configurações:</p>
+                <img src="../images/imagesAula02/criandoUsuarioAdmin.png" alt="">
+
+                    <li><strong>Name:</strong> ADMIN</li>
+                    <li><strong>Username:</strong> sys (nome padrão do sistema)</li>
+                    <li><strong>Password:</strong> senha cadastrada ao instalar o DB</li>
+                    <li><strong>Role:</strong> SYSDBA (Nível mais alto de permissão de uma banco de dados = modo deus) </li>
+                    <ul>
+                        <p>SYSDBA permite:</p>
+                        <ul>
+                            <li>Criar ou apagar bancos de dados.</li>
+                            <li>Executar backup e recovery.</li>
+                            <li>Gerenciar usuários e permissões sem restrições.</li>
+                            <li>Abrir/montar/desmontar o banco (STARTUP e SHUTDOWN).</li>
+                        </ul>
+                    </ul>
+                    <li><strong>Service name:</strong> XEPDB1 (eXpress Edition Pluggable Database 1)</li>
+                    <ul>
+                        <p>Explicação:</p>
+                        <ul>
+                            <li>No Oracle XE (Express Edition), quando você instala o banco de dados, ele cria automaticamente alguns containers e pluggable databases (PDBs).</li>
+                            <li>CDB (Container Database): É o “banco de dados principal” que contém informações de controle e metadados dos bancos que podem ser conectados a ele.</li>
+                            <li>PDB (Pluggable Database): É um “banco de dados plugável”, que funciona como um banco de dados separado dentro do CDB.</li>
+                            <li>No Oracle XE 18c/21c:</li>
+                            <ul>
+                                <li>XEPDB1 é o pluggable database padrão criado automaticamente durante a instalação.</li>
+                                <li>Ele é o PDB que você geralmente conecta para criar tabelas, usuários e executar queries.</li>
+                                <li>Resumindo: XEPDB1 é o nome do banco de dados “pronto para usar” dentro do Oracle XE. É nele que você vai trabalhar normalmente.</li>
+                            </ul>
+                        </ul>
+                    </ul>
             </ul>
-            <h3>O que é um Banco de Dados?</h3>
-            <ul>
-                <p>Um banco de dados é um local onde você guarda informações de forma organizada, como se fosse uma estante cheia de pastas bem arrumadas. Ele serve para:</p>
-                <ul>
-                    <li>Armazenar dados (nomes, números, registros etc.).</li>
-                    <li>Organizar essas informações.</li>
-                    <li>Permitir buscas rápidas quando você precisa encontrar algo.</li>
-                </ul>
-            </ul>
+            <hr>
         </article>
     </main>
     <footer>
