@@ -69,9 +69,17 @@ strong{
         margin-left: 5px;
     }
 
+    article ul{
+        padding: 20px 0px;
+    }
+    
+    main{
+        padding: 0;
+    }
+
 }
 
-@media (mIN-width: 890px){
+@media (min-width: 890px){
 
     nav ul li a::before{
         content: "AULA ";
