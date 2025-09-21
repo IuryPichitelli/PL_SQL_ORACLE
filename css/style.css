@@ -255,7 +255,7 @@ article .linkPdfAula::before{
 article .iframeVideo{
     position: relative;
     padding-bottom: 58%;
-    margin: 20px 0px 40px 20px;
+    margin: 20px 0px;
 }
 
 article .iframeVideo > iframe{
@@ -337,7 +337,6 @@ footer p{
         padding: 5px;
     }
     
-
 }
 
 @media (min-width: 890px){
