@@ -287,6 +287,45 @@ article .iframeVideo > iframe{
     transition:  transform .1s ease;
 }
 
+/* -- carousel -- */
+
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.carouselContainer img{
+    object-fit: cover;
+}
+
+.carousel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.btn.prev { 
+    left: 10px; 
+}
+
+.btn.next {
+    right: 10px; 
+}
+
 /**********************************************************************************/
 /*----------------------------------- FOOTER -------------------------------------*/ 
 /**********************************************************************************/

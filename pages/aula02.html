@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/favicon/favicon-32x32.png" type="image/x-icon">
-    <script src="../script/script.js"></script>
+    <script defer src="../script/script.js"></script>
     <title>PL/SQL ORACLE - AULA 02</title>
 </head>
 <body>
@@ -37,11 +37,11 @@
             <h2>Anotações da aula</h2>
             <h3>Criando usuário SYS</h3>
             <ul>
-                <p>Para criar o usuário admin do sistema, teremos que colocar as seguintes configurações:</p>
+                <p>Para criar uma conexão como o usuário admin do sistema, teremos que colocar as seguintes configurações:</p>
                 <img src="../images/imagesAula02/criandoUsuarioAdmin.png" alt="">
 
                 <li><strong>Name:</strong> ADMIN</li>
-                <li><strong>Username:</strong> sys (nome padrão do sistema)</li>
+                <li><strong>Username:</strong> sys (usuário padrão do sistema)</li>
                 <li><strong>Password:</strong> senha cadastrada ao instalar o DB</li>
                 <li><strong>Role:</strong> SYSDBA (Nível mais alto de permissão de uma banco de dados = modo deus) </li>
                 <ul>
@@ -72,6 +72,20 @@
                 <li><strong>Status: Sucess</strong>: essa é a mensagem que vai aparecer se tudo estiver correto.</li>
             </ul>
             <hr>
+            <h3>Criando os próprios usuários</h3>
+            <ul>
+                <p>Para criarmos o próprio usuário, devemos acessar a <strong>Oracle Connections > ADMIN</strong>, dentro do DB vamos percorrer todas as pastas até chegar na última, chamada <strong>Other Users</strong>, nela iremos clicar com o botão direito em cima da pasta <strong>Other Users</strong></p>
+                <div class="carouselContainer">
+                    <div class="carousel">
+                        <img src="../images/imagesAula02/creatingDbUsers1.png" alt="image01">
+                        <img src="../images/imagesAula02/creatingDbUsers2.png" alt="image02">
+                        <img src="../images/imagesAula02/creatingDbUsers3.png" alt="image03">
+                        <img src="../images/imagesAula02/creatingDbUsers4.png" alt="image04">
+                    </div>
+                    <button class="btn prev">&#10094;</button>
+                    <button class="btn next">&#10095;</button>
+                </div>
+            </ul>
         </article>
     </main>
     <footer>
