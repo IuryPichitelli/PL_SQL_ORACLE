@@ -69,13 +69,10 @@ strong{
         margin-left: 5px;
     }
 
-    article ul{
-        padding: 20px 0px;
+    main{
+       padding: 0; 
     }
     
-    main{
-        padding: 0;
-    }
 
 }
 
@@ -107,7 +104,7 @@ body{
 /*----------------------------------- HEADER -------------------------------------*/ 
 /**********************************************************************************/
 header{
-    height: 100px;
+    height: max-content;
     width: 100%;
     background-color: var(--cor-third);
     outline: 1px solid gray;
