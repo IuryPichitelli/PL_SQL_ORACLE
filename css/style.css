@@ -17,8 +17,9 @@
 
     --cor-backg: #202124;
     --cor-main: #292A2D;
-
     --cor-text: black;
+
+    --box-shadow-white: 0 5px 15px rgba(196, 196, 196, 0.4);
     --font-text: arial, sans-serif;
     --font-title: "Orbitron", sans-serif;
 }
@@ -186,6 +187,7 @@ article img{
     width: 100%;
     margin: 20px 0px;
     border: 1px solid gray;
+    box-shadow: var(--box-shadow-white);
 }
 
 article .listWithH4{
@@ -292,12 +294,16 @@ article .iframeVideo > iframe{
 .carouselContainer {
     position: relative;
     width: 100%;
+    height: 620px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    box-shadow: var(--box-shadow-white);
+    border-radius: 5px;
+    
 }
 
 .carouselContainer img{
-    object-fit: cover;
+    padding: 10px;
+    margin: 0;
 }
 
 .carousel{
