@@ -74,7 +74,7 @@
             <hr>
             <h3>Criando os próprios usuários</h3>
             <ul>
-                <p>Para criarmos o próprio usuário, devemos acessar a <strong>Oracle Connections</strong> > <strong>ADMIN</strong>, dentro do DB vamos percorrer todas as pastas até chegar na última chamada <strong>Other Users</strong>, nela iremos clicar com o botão direito em cima da pasta <strong>Other Users</strong> e clicaremos na opção <strong>Create User..</strong>, dentro do formulário Create User iremos colocar seu username seguido de uma senha. Após criarmos o nome e senha do usuário iremos em <strong>Granted Roles</strong>, aonde podemos atribuir ao usuário criado alguns pacotes de permissões do DB, e logo após por exemplo atruibuirmos ao usuário </p>
+                <p>Para criarmos o próprio usuário, devemos acessar a <strong>Oracle Connections</strong> > <strong>ADMIN</strong>, dentro do DB vamos percorrer todas as pastas até chegar na última chamada <strong>Other Users</strong>, nela iremos clicar com o botão direito em cima da pasta <strong>Other Users</strong> e clicaremos na opção <strong>Create User..</strong>, dentro do formulário Create User iremos colocar seu username seguido de uma senha. Após criarmos o nome e senha do usuário iremos em <strong>Granted Roles</strong>, aonde podemos atribuir ao usuário criado alguns pacotes de permissões do DB, e logo após por exemplo atribuirmos ao usuário a sua <strong>role</strong> podemos também atribuir mais outras grant, porém não podemos atribuir todas as grant, pois estariamos dando ao usuário o mesmo nível de permissão que o <strong>ADMIN</strong> oque não é conveniente. Por fim o sistema não permitirá que o usuário tenha os grant de nível <strong>ADMIN</strong>, assim o sistema atruibuirá algumas grant padrões, oque por sua vez pode ser alterada.</p>
 
                 <button class="buttonOpenContainer">Oracle connections</button>
                 <div class="containerButtons" >
@@ -115,16 +115,52 @@ Em vez de dar cada privilégio individualmente a um usuário, você cria um role
                     <img src="../images/imagesAula02/creatingDbUsers7.png" alt="image04">
                 </div>
 
-                <button class="buttonOpenContainer">Create User</button>
+                <button class="buttonOpenContainer">Falied to process command</button>
                 <div class="containerButtons">
                     <img src="../images/imagesAula02/creatingDbUsers8.png" alt="image04">
                 </div>
 
-                <button class="buttonOpenContainer">Create User</button>
+                <button class="buttonOpenContainer">Grants user</button>
                 <div class="containerButtons">
                     <img src="../images/imagesAula02/creatingDbUsers9.png" alt="image04">
                 </div>               
             </ul>
+            <hr>
+            <h3>Criando uma conexão com o banco de dados</h3>,
+            <ul>
+                <p>Para criarmos uma <strong>connection</strong> no DB, devemos clicar no icone de " + " no canto superior esquerdo e abrir uma conexão, assim abrir uma tela que devemos colocar o nome da conexão, o nome do usuário criado pelo <strong>ADMIN</strong> e a senha. Por fim colocaremos o <strong>service name</strong>, e clicaremos em <strong>connect</strong> e pronto, conexão criada no DB.</p>
+                <h4>Creating connection</h4>
+                <img src="../images/imagesAula02/creatingConnectionDataBase.png" alt="">
+            </ul>
+            <hr>
+            <h3>Dúvidas:</h3>
+            <ul>
+                <li><strong>Oque é XEPDB1?</strong></li>
+                <ul>
+                    <p>O XEPDB1 é o nome padrão de um “pluggable database” (PDB) do Oracle Database Express Edition (XE).</p>
+                </ul>
+                <li><strong>Conceitos básicos do Oracle moderno:</strong></li>
+                <ul>
+                    <p>O Oracle 12c+ mudou o modelo de banco de dados:</p>
+                    <li>CDB (Container Database) → é o “banco principal” que contém a infraestrutura.</li>
+                    <li>PDB (Pluggable Database) → são “bancos menores” que ficam dentro do CDB. Você pode ter vários PDBs dentro de um CDB.</li>
+                    <ul>
+                        <li>Pense no CDB como um prédio e os PDBs como apartamentos. Cada apartamento é independente, mas todos compartilham a mesma estrutura do prédio.</li>
+                    </ul>
+                </ul>
+                <li><strong>No Oracle XE</strong></li>
+                <ul>
+                    <li>O XE vem com um CDB chamado XE.</li>
+                    <li>Ele cria automaticamente um PDB chamado XEPDB1.</li>
+                    <li>Então quando você instala o Oracle XE, você já tem um banco pronto para usar, que é o XEPDB1.</li>
+                </ul>
+                <li><strong>Para que serve?</strong></li>
+                <ul>
+                    <li>É o banco que você vai usar para criar tabelas, inserir dados, fazer consultas, etc.</li>
+                    <li>No SQL Developer, você se conecta a ele usando o service name XEPDB1.</li>
+                </ul>
+            </ul>
+            
         </article>
     </main>
     <footer>
