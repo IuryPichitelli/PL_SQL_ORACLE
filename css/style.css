@@ -12,8 +12,8 @@
     --cor-primary: #af001d;
     --cor-primary-hover:#d80024;
     --cor-secundary: #f5f5f5;
-    --cor-third:rgba(0, 0, 0, 0.534);
-    --cor-strong:rgb(206, 59, 59);
+    --cor-third:#00000088;
+    --cor-strong:#ce3b3b;
 
     --cor-backg: #202124;
     --cor-main: #292A2D;
@@ -289,48 +289,49 @@ article .iframeVideo > iframe{
     transition:  transform .1s ease;
 }
 
-/* -- carousel -- */
+/* Container buttons */
 
-.carouselContainer {
-    position: relative;
-    width: 100%;
-    height: 620px;
+.containerButtons{
+    max-height: 0;
     overflow: hidden;
-    box-shadow: var(--box-shadow-white);
-    border-radius: 5px;
-    
+    transition: max-height 0.4s ease-in-out;
+}
+.containerButtons.open {
+    max-height: 700px;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.carouselContainer img{
+.buttonOpenContainer.activeImage::before{
+    content: '📌 ';
+    float: right;
+}
+
+.containerButtons img{
+    width: 100%;
+}
+
+.buttonOpenContainer{
+    background-color: var(--cor-backg);
+    border: 1px solid gray;
+    width: 100%;
     padding: 10px;
-    margin: 0;
-}
-
-.carousel{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.btn {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 13px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
-    border-radius: 50%;
+    font-family: var(--font-text);
+    font-size: 1em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--cor-secundary);
 }
 
-.btn.prev { 
-    left: 10px; 
+.buttonOpenContainer:hover{
+    background-color: rgba(63, 63, 63, 0.514);
 }
 
-.btn.next {
-    right: 10px; 
+.buttonOpenContainer:active{
+    transform: scale(.99);
 }
+
 
 /**********************************************************************************/
 /*----------------------------------- FOOTER -------------------------------------*/ 
