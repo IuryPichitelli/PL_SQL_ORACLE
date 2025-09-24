@@ -267,6 +267,77 @@ article .linkPdfAula::before{
     border-radius: 10px;
 }
 
+/* -- Code view -- */
+
+.codeViewContainer{
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: var(--cor-backg);
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+.codeViewBar{
+    background-color: var(--cor-main);
+    margin-top: -20px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid gray;
+    padding: 10px 10px 7px 10px;
+}
+
+.codeViewBar span{
+    vertical-align: baseline;
+}
+
+.textCodeViewBar{
+    font-family: var(--cor-text);
+}
+
+.spanColorBlue{
+    color: rgb(108, 172, 255);;
+}
+
+.codeViewBar > .redCircle{
+    background-color: #af001d;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.codeViewBar > .greenCircle{
+    background-color: green;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.codeViewBar > .yellowCircle{
+    background-color: yellow;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.contentCodeView ul .listCodeView{
+    padding-top: 20px;
+}
+
+.contentCodeView ul, .contentCodeView li{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cor-secundary);
+    margin-bottom: 0;
+}
+
+.contentCodeView li{
+    list-style-type: none;
+    line-height: 16pt;
+}
+
 /* -- iframe video -- */
 
 article .iframeVideo{
