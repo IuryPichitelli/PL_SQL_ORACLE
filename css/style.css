@@ -252,6 +252,21 @@ article .linkPdfAula::before{
     content: "📘 ";
 }
 
+.listWithCenterTitle{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.listWithCenterTitle h4{
+    text-align: center;
+    font-size: 1.4em;
+    background-color: var(--cor-backg);
+    padding: 5px;
+    border-radius: 10px;
+}
+
 /* -- iframe video -- */
 
 article .iframeVideo{

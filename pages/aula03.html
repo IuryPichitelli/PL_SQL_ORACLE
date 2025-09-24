@@ -62,6 +62,50 @@
                         <li>DATE</li>
                     </ol>
                 </ul>
+                <ul>
+                    <h3>Aprofundando:</h3>
+                    <ul>
+                        <ul class="listWithCenterTitle">
+                            <h4>Tipos de caracteres:</h4>
+                            <p>Usados para armazenar dados de texto.</p>
+                            <li><strong>CHAR (size)</strong> : Armazena uma string de caracteres de tamanho fixo. Ocupa sempre a quantidade de bytes definida em size, mesmo que o texto armazenado seja menor.</li>
+                            <li><strong>VARCHAR2 (size)</strong> : Armazena uma string de caracteres de tamanho variável. Ocupa apenas o espaço necessário para o texto, até o limite máximo definido em size. É o tipo de texto mais comum no Oracle.</li>
+                            <li><strong>NCHAR (size)</strong> e <strong>NVARCHAR2 (size)</strong> : Versões dos tipos CHAR e VARCHAR2 que suportam conjuntos de caracteres nacionais, como o Unicode, para armazenar dados em vários idiomas.</li>
+                            <li><strong>CLOB</strong> : Usado para armazenar grandes blocos de dados de caracteres, como textos longos ou documentos. </li>
+                        </ul>
+                    </ul>     
+                    
+                    <ul>
+                        <ul class="listWithCenterTitle">
+                            <h4>Tipos numéricos</h4>
+                            <p>Usados para armazenar valores numéricos.</p>
+                            <li><strong>NUMBER (p, s)</strong> : Um tipo numérico com alta precisão e escala configuráveis. p é a precisão (o número total de dígitos) e s é a escala (o número de dígitos à direita da vírgula decimal).</li>
+                            <li><strong>NUMBER</strong> : Quando a precisão e a escala não são especificadas, o Oracle as ajusta dinamicamente, permitindo armazenar números inteiros ou decimais.</li>
+                            <li><strong>INTEGER</strong> : Usado para armazenar números inteiros.</li>
+                            <li><strong>FLOAT</strong> : Usado para armazenar valores numéricos aproximados, de ponto flutuante.</li>
+                            <li><strong>BINARY_FLOAT</strong> e <strong>BINARY_DOUBLE</strong> : Tipos numéricos que armazenam valores de ponto flutuante com base nas normas IEEE 754, sendo mais eficientes para cálculos que requerem alta performance.</li>
+                        </ul>
+                    </ul>
+
+                    <ul>
+                        <ul class="listWithCenterTitle">
+                            <h4>Tipos de data e hora</h4>
+                            <p>Usados para armazenar informações temporais.</p>
+                            <li><strong>DATE :</strong> Armazena a data (dia, mês e ano) e a hora (hora, minuto e segundo).</li>
+                            <li><strong>TIMESTAMP :</strong> Oferece maior precisão que o DATE, armazenando também frações de segundo.</li>
+                        </ul>
+                    </ul>
+
+                    <ul>
+                        <ul class="listWithCenterTitle">
+                            <h4>Tipos binários</h4>
+                            <p>Usados para armazenar dados binários, como imagens, áudio ou arquivos.</p>
+                            <li><strong>RAW (size)</strong> : Usado para armazenar dados binários de tamanho variável, de forma similar ao VARCHAR2, mas para dados não textuais.</li>
+                            <li><strong>BLOB</strong> : Armazena grandes objetos binários, como imagens ou arquivos.</li>
+                            <li><strong>BFILE</strong> : Armazena um ponteiro para um arquivo binário que está fora do banco de dados, no sistema de arquivos do servidor.</li>
+                        </ul>
+                    </ul>
+                </ul>
             </ul>
             <hr>
         </article>
