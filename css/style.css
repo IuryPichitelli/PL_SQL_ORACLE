@@ -282,7 +282,7 @@ article .linkPdfAula::before{
     margin-top: -20px;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid gray;
-    padding: 10px 10px 7px 10px;
+    padding: 10px 20px 7px 10px;
 }
 
 .codeViewBar span{
@@ -290,11 +290,15 @@ article .linkPdfAula::before{
 }
 
 .textCodeViewBar{
-    font-family: var(--cor-text);
+    font-family: var(--font-text);
+    color: var(--cor-secundary);
+    display: inline-block;
+    float: right;
 }
 
 .spanColorBlue{
-    color: rgb(108, 172, 255);;
+    color: rgb(108, 172, 255);
+    
 }
 
 .codeViewBar > .redCircle{
