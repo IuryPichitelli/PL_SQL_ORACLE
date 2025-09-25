@@ -292,7 +292,6 @@ article .linkPdfAula::before{
 .textCodeViewBar{
     font-family: var(--font-text);
     color: var(--cor-secundary);
-    display: inline-block;
     float: right;
 }
 
