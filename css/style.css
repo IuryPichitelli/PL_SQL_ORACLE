@@ -481,7 +481,8 @@ footer p{
     }
 
     main{
-       padding: 5px 5px; 
+       padding: 5px 5px;
+       margin: 0; 
     }
 
     article ul, ol{
