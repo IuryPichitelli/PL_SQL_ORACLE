@@ -301,6 +301,10 @@ article .linkPdfAula::before{
     
 }
 
+.spanColorGreen{
+    color:rgb(0, 196, 0);
+}
+
 .codeViewBar > .redCircle{
     background-color: #af001d;
     border-radius: 50%;

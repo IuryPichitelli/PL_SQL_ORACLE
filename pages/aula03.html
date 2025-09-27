@@ -110,8 +110,7 @@
             </ul>
             <hr>
             <ul>
-                <li><strong>Aula prática:</strong></li>
-                
+                <h3>CRIANDO TABELAS - DDL CREATE</h3>
                 <ul>
                     <p>Vamos criar 3 tabelas de exemplo</p>
                     
@@ -131,9 +130,107 @@
                                         <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> clientes (
                                             <ul>
                                                 <li>id_cliente <span class="spanColorBlue">INT</span>,</li>
-                                                <li>nome_cliente <span class="spanColorBlue">VARCHAR2</span> (<span style="color: rgb(0, 196, 0);">50</span>),</li>
-                                                <li>sexo <span class="spanColorBlue">VARCHAR2</span> (<span style="color: rgb(0, 196, 0);">1</span>),</li>
-                                                <li>email <span class="spanColorBlue">VARCHAR2</span> (<span style="color: rgb(0, 196, 0);">50</span>),</li>
+                                                <li>nome_cliente <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
+                                                <li>sexo <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">1</span>),</li>
+                                                <li>email <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
+                                                <li>data_nascimento <span class="spanColorBlue">DATE</span></li>
+                                            </ul>
+                                        <p>);</p>
+                                        </ul>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </ul>
+                    </ul>
+                    <ul>
+                        <p>Tabela 02: <strong>PRODUTOS</strong></p>
+                        <ul>
+                            <p>Tabela PRODUTOS deve conter as seguintes colunas:</p>
+                            <li>Coluna 01: id_produtos do tipo INT</li>
+                            <li>Coluna 02: nome_produto do tipo VARCHAR2</li>
+                            <li>Coluna 03: marca do tipo VARCHAR2</li>
+                            <li>Coluna 04: categoria do tipo VARCHAR2</li>
+                            <li>Coluna 05: preco_unit do tipo NUMBER (p,s)</li>
+                            <li>Coluna 06: custo_unit do tipo NUMBER (p,s)</li>
+                            <div class="codeViewContainer">
+                                <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
+                                <div class="contentCodeView">
+                                    <ul>
+                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> produtos (
+                                            <ul>
+                                                <li>id_produto <span class="spanColorBlue">INT</span>,</li>
+                                                <li>nome_produto <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
+                                                <li>marca <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>categoria <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>preco_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                                <li>custo_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                            </ul>
+                                        <p>);</p>
+                                        </ul>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <p>Tabela 03: <strong>VENDAS</strong></p>
+                        <ul>
+                            <p>Tabela PRODUTOS deve conter as seguintes colunas:</p>
+                            <li>Coluna 01: id_venda do tipo INT</li>
+                            <li>Coluna 02: data_venda do tipo DATE</li>
+                            <li>Coluna 03: id_cliente do tipo INT</li>
+                            <li>Coluna 04: id_produto do tipo INT</li>
+                            <li>Coluna 05: quantidade do tipo NUMBER (p,s)</li>
+                            <div class="codeViewContainer">
+                                <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
+                                <div class="contentCodeView">
+                                    <ul>
+                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> vendas (
+                                            <ul>
+                                                <li>id_venda <span class="spanColorBlue">INT</span>,</li>
+                                                <li>data_venda <span class="spanColorBlue">DATE</span>,</li>
+                                                <li>id_cliente <span class="spanColorBlue">INT </span>,</li>
+                                                <li>id_produto <span class="spanColorBlue">INT </span>,</li>
+                                                <li>quantidade <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                            </ul>
+                                        <p>);</p>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </ul>
+
+                </ul>
+            </ul>
+            <hr>
+            
+            <ul>
+                <h3>INSERINDO DADOS NAS TABELAS - DML INSERT INTO</h3>
+                <ul>
+                    <p>Vamos criar 3 tabelas de exemplo</p>
+                    <ul>
+                        <p>Tabela 01: <strong>CLIENTES</strong></p>
+                        <ul>
+                            <p>Tabela CLIENTES deve conter as seguintes colunas:</p>
+                            <li>Coluna 01: id_clientes do tipo INT</li>
+                            <li>Coluna 02: nome_clientes do tipo VARCHAR2</li>
+                            <li>Coluna 03: sexo do tipo VARCHAR2</li>
+                            <li>Coluna 04: email do tipo VARCHAR2</li>
+                            <li>Coluna 05: data_nascimento do tipo DATE</li>
+                            <div class="codeViewContainer">
+                                <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
+                                <div class="contentCodeView">
+                                    <ul>
+                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> clientes (
+                                            <ul>
+                                                <li>id_cliente <span class="spanColorBlue">INT</span>,</li>
+                                                <li>nome_cliente <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
+                                                <li>sexo <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">1</span>),</li>
+                                                <li>email <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
                                                 <li>data_nascimento <span class="spanColorBlue">DATE</span></li>
                                             </ul>
                                         <p>);</p>
@@ -154,8 +251,8 @@
                             <li>Coluna 02: nome_produto do tipo VARCHAR2</li>
                             <li>Coluna 03: marca do tipo VARCHAR2</li>
                             <li>Coluna 04: categoria do tipo VARCHAR2</li>
-                            <li>Coluna 05: preco_unit do tipo NUMBER(p,s)</li>
-                            <li>Coluna 06: custo_unit do tipo NUMBER(p,s)</li>
+                            <li>Coluna 05: preco_unit do tipo NUMBER (p,s)</li>
+                            <li>Coluna 06: custo_unit do tipo NUMBER (p,s)</li>
                             <div class="codeViewContainer">
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
@@ -163,11 +260,11 @@
                                         <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> produtos (
                                             <ul>
                                                 <li>id_produto <span class="spanColorBlue">INT</span>,</li>
-                                                <li>nome_produto <span class="spanColorBlue">VARCHAR2</span> (<span style="color: rgb(0, 196, 0);">50</span>),</li>
-                                                <li>marca <span class="spanColorBlue">VARCHAR2 </span>(<span style="color:rgb(0, 196, 0);">50</span>),</li>
-                                                <li>categoria <span class="spanColorBlue">VARCHAR2 </span>(<span style="color:rgb(0, 196, 0);">50</span>),</li>
-                                                <li>preco_unit <span class="spanColorBlue">NUMBER </span>(<span style="color: rgb(0, 196, 0);">10, 2</span>)</li>
-                                                <li>custo_unit <span class="spanColorBlue">NUMBER </span>(<span style="color: rgb(0, 196, 0);">10, 2</span>)</li>
+                                                <li>nome_produto <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
+                                                <li>marca <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>categoria <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>preco_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                                <li>custo_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
                                             </ul>
                                         <p>);</p>
                                         </ul>
@@ -179,31 +276,28 @@
                     </ul>
                     <hr>
                     <ul>
-                        <p>Tabela 02: <strong>PRODUTOS</strong></p>
+                        <p>Tabela 03: <strong>VENDAS</strong></p>
                         <ul>
                             <p>Tabela PRODUTOS deve conter as seguintes colunas:</p>
-                            <li>Coluna 01: id_produtos do tipo INT</li>
-                            <li>Coluna 02: nome_produto do tipo VARCHAR2</li>
-                            <li>Coluna 03: marca do tipo VARCHAR2</li>
-                            <li>Coluna 04: categoria do tipo VARCHAR2</li>
-                            <li>Coluna 05: preco_unit do tipo NUMBER(p,s)</li>
-                            <li>Coluna 06: custo_unit do tipo NUMBER(p,s)</li>
+                            <li>Coluna 01: id_venda do tipo INT</li>
+                            <li>Coluna 02: data_venda do tipo DATE</li>
+                            <li>Coluna 03: id_cliente do tipo INT</li>
+                            <li>Coluna 04: id_produto do tipo INT</li>
+                            <li>Coluna 05: quantidade do tipo NUMBER (p,s)</li>
                             <div class="codeViewContainer">
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> produtos (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> vendas (
                                             <ul>
-                                                <li>id_produto <span class="spanColorBlue">INT</span>,</li>
-                                                <li>nome_produto <span class="spanColorBlue">VARCHAR2</span> (<span style="color: rgb(0, 196, 0);">50</span>),</li>
-                                                <li>marca <span class="spanColorBlue">VARCHAR2 </span>(<span style="color:rgb(0, 196, 0);">50</span>),</li>
-                                                <li>categoria <span class="spanColorBlue">VARCHAR2 </span>(<span style="color:rgb(0, 196, 0);">50</span>),</li>
-                                                <li>preco_unit <span class="spanColorBlue">NUMBER </span>(<span style="color: rgb(0, 196, 0);">10, 2</span>)</li>
-                                                <li>custo_unit <span class="spanColorBlue">NUMBER </span>(<span style="color: rgb(0, 196, 0);">10, 2</span>)</li>
+                                                <li>id_venda <span class="spanColorBlue">INT</span>,</li>
+                                                <li>data_venda <span class="spanColorBlue">DATE</span>,</li>
+                                                <li>id_cliente <span class="spanColorBlue">INT </span>,</li>
+                                                <li>id_produto <span class="spanColorBlue">INT </span>,</li>
+                                                <li>quantidade <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
                                             </ul>
                                         <p>);</p>
                                         </ul>
-                                        
                                     </ul>
                                 </div>
                             </div>
@@ -212,7 +306,7 @@
 
                 </ul>
             </ul>
-            <hr>
+
         </article>
     </main>
     <footer>
