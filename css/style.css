@@ -336,6 +336,8 @@ article .linkPdfAula::before{
     padding-top: 20px;
 }
 
+
+
 .contentCodeView ul, .contentCodeView li{
     font-family: monospace, sans-serif;
     color: var(--cor-secundary);

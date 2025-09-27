@@ -99,43 +99,31 @@ CREATE TABLE vendas(
 
 INSERT INTO clientes( id_cliente, nome_cliente, sexo, email, data_nascimento) VALUES
 (1, 'Iury', 'M', 'iury@gmail.com', TO_DATE('11/10/2001', 'DD/MM/YYYY'));
-
-
-SELECT * FROM clientes;
-
-
-
-
-
-
-
-
-
-
-
-
-
+INSERT INTO clientes( id_cliente, nome_cliente, sexo, email, data_nascimento) VALUES
+(2, 'Joana', 'F', 'joana@gmail.com', TO_DATE('23/02/1990', 'DD/MM/YYYY'));
+INSERT INTO clientes( id_cliente, nome_cliente, sexo, email, data_nascimento) VALUES
+(3, 'Paulo', 'M', 'paulo@gmail.com', TO_DATE('05/06/1982', 'DD/MM/YYYY'));
 
 -- Preenche a tabela PRODUTOS
 
---INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
---	(1,  'iPhone 11',   'Apple', 'Celular', 3500, 2200);
---INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
---    (2,  'iPhone 12',   'Apple', 'Celular', 4100, 3000);
---INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
---    (3,  'Moto G60',   'Motorola', 'Celular', 1600, 800);
+INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
+	(1,  'iPhone 11',   'Apple', 'Celular', 3500, 2200);
+INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
+    (2,  'iPhone 12',   'Apple', 'Celular', 4100, 3000);
+INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
+    (3,  'Moto G60',   'Motorola', 'Celular', 1600, 800);
 
 
 -- Preenche a tabela VENDAS
 
---INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
---	(1,  '09/01/2022',   3, 1, 2);
---INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
---    (2,  '10/01/2022',   2, 2, 1);
---INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
---    (3,  '13/01/2022',   1, 3, 1);
---INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
---    (4,  '02/02/2022',   1, 1, 1);
+INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+	(1,  '09/01/2022',   3, 1, 2);
+INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+    (2,  '10/01/2022',   2, 2, 1);
+INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+   (3,  '13/01/2022',   1, 3, 1);
+INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+    (4,  '02/02/2022',   1, 1, 1);
 
 
 
@@ -143,5 +131,6 @@ SELECT * FROM clientes;
 -- DML SELECT
 -- Criadas as tabelas, podemos usar o comando SELECT para selecion�-las.
 
+select * from vendas;
 
 
