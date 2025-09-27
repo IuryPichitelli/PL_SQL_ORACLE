@@ -211,35 +211,49 @@
             <ul>
                 <h3>INSERINDO DADOS NAS TABELAS - DML INSERT INTO</h3>
                 <ul>
-                    <p>Vamos criar 3 tabelas de exemplo</p>
+                    <p>Vamos inserir dados nas três tabelas: clientes, produtos e vendas</p>
                     <ul>
                         <p>Tabela 01: <strong>CLIENTES</strong></p>
                         <ul>
-                            <p>Tabela CLIENTES deve conter as seguintes colunas:</p>
-                            <li>Coluna 01: id_clientes do tipo INT</li>
-                            <li>Coluna 02: nome_clientes do tipo VARCHAR2</li>
-                            <li>Coluna 03: sexo do tipo VARCHAR2</li>
-                            <li>Coluna 04: email do tipo VARCHAR2</li>
-                            <li>Coluna 05: data_nascimento do tipo DATE</li>
+                            <p>Tabela CLIENTES deve conter as seguintes dados:</p>
+                            <li>Coluna 01: id_clientes = 1</li>
+                            <li>Coluna 02: nome_clientes = 'Iury'</li>
+                            <li>Coluna 03: sexo = 'M'</li>
+                            <li>Coluna 04: email = 'iury@gmail.com'</li>
+                            <li>Coluna 05: data_nascimento = '11/10/2001'</li>
                             <div class="codeViewContainer">
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> clientes (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >INSERT INTO</span> clientes (
                                             <ul>
-                                                <li>id_cliente <span class="spanColorBlue">INT</span>,</li>
-                                                <li>nome_cliente <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
-                                                <li>sexo <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">1</span>),</li>
-                                                <li>email <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
-                                                <li>data_nascimento <span class="spanColorBlue">DATE</span></li>
+                                                <li>id_cliente ,</li>
+                                                <li>nome_cliente ,</li>
+                                                <li>sexo ,</li>
+                                                <li>email ,</li>
+                                                <li>data_nascimento</li>
                                             </ul>
-                                        <p>);</p>
+                                        <p>) <span class="spanColorBlue">VALUES</span>(</p>
+                                            <ul>
+                                                <li> 1 ,</li>
+                                                <li>' Iury ',</li>
+                                                <li>' M ',</li>
+                                                <li>' iury@gmail.com ',</li>
+                                                <li><span class="spanColorBlue">TO_DATE</span> ( ' 11/10/2001 ', ' DD/MM/YYYY ' )</li>
+                                            </ul>
+                                            <p>);</p>
                                         </ul>
-                                        
                                     </ul>
                                 </div>
                             </div>
-
+                            <br>
+                            <p><strong>Obs: </strong>No VALUES data_nascimento DATE tivemos que usar o TO_DATE pelos seguinte motivo:</p>
+                            <ul>
+                                <li>Quando você insere uma data como string ('11/10/2001'), o banco tenta converter automaticamente usando o formato de data padrão da sua sessão (NLS_DATE_FORMAT). Se o NLS_DATE_FORMAT estiver como YYYY-MM-DD, o Oracle espera '2001-10-11'.</li>
+                                <br> 
+                                <p><strong>Dica:</strong></p>
+                                <li>Mesmo que você saiba o formato, é boa prática sempre usar TO_DATE com o formato explícito (DD/MM/YYYY, YYYY-MM-DD, etc.), porque assim seu código funciona em qualquer ambiente, independente da configuração regional.</li>
+                            </ul>
                         </ul>
                     </ul>
                     <hr>
