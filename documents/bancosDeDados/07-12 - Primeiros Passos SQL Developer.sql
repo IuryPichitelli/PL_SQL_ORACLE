@@ -2,27 +2,27 @@
 *
 *
 
--- I. O que é CRUD e o que são os comandos DDL e DML.
+-- I. O que ï¿½ CRUD e o que sï¿½o os comandos DDL e DML.
 
-CRUD é um nome dado para as operações realizadas dentro de um banco de dados. É a sigla para:
+CRUD ï¿½ um nome dado para as operaï¿½ï¿½es realizadas dentro de um banco de dados. ï¿½ a sigla para:
 CREATE, READ, UPDATE e DELETE.
 
 De forma mais geral, podemos dividir os comandos dentro de um banco de dados em alguns grupos:
 
 - DDL: Data Definition Language
-São comandos para manipulação de objetos em um banco de dados.
+Sï¿½o comandos para manipulaï¿½ï¿½o de objetos em um banco de dados.
 
 Exemplos: CREATE, ALTER, TRUNCATE, DROP, COMMENT
 
 - DML: Data Manipulation Language
-São comandos para manipulação de dados em um banco de dados.
+Sï¿½o comandos para manipulaï¿½ï¿½o de dados em um banco de dados.
 
 Exemplos: INSERT, UPDATE, DELETE, SELECT
 
 
 -- II. Tipos de Dados
 
--- Os dados armazenados dentro de um banco de dados poderão ser de uma série de tipos.
+-- Os dados armazenados dentro de um banco de dados poderï¿½o ser de uma sï¿½rie de tipos.
 -- Abaixo, listamos os mais comuns.
 
 -- 1. INT
@@ -45,6 +45,13 @@ Exemplos: INSERT, UPDATE, DELETE, SELECT
 -- Coluna 4: email do tipo VARCHAR2
 -- Coluna 5: data_nascimento do tipo DATE
 
+create TABLE clientes(
+    id_cliente INT,
+    nome_cliente VARCHAR2(50),
+    sexo VARCHAR2 (1),
+    email VARCHAR2 (50),
+    data_nascimento DATE
+);
 
 
 
@@ -131,24 +138,24 @@ Exemplos: INSERT, UPDATE, DELETE, SELECT
 
 -- Preenche a tabela PRODUTOS
 
-INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
-	(1,  'iPhone 11',   'Apple', 'Celular', 3500, 2200);
-INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
-    (2,  'iPhone 12',   'Apple', 'Celular', 4100, 3000);
-INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
-    (3,  'Moto G60',   'Motorola', 'Celular', 1600, 800);
+--INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
+--	(1,  'iPhone 11',   'Apple', 'Celular', 3500, 2200);
+--INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
+--    (2,  'iPhone 12',   'Apple', 'Celular', 4100, 3000);
+--INSERT INTO produtos(id_produto, nome_produto, marca, categoria, preco_unit, custo_unit) VALUES
+--    (3,  'Moto G60',   'Motorola', 'Celular', 1600, 800);
 
 
 -- Preenche a tabela VENDAS
 
-INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
-	(1,  '09/01/2022',   3, 1, 2);
-INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
-    (2,  '10/01/2022',   2, 2, 1);
-INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
-    (3,  '13/01/2022',   1, 3, 1);
-INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
-    (4,  '02/02/2022',   1, 1, 1);
+--INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+--	(1,  '09/01/2022',   3, 1, 2);
+--INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+--    (2,  '10/01/2022',   2, 2, 1);
+--INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+--    (3,  '13/01/2022',   1, 3, 1);
+--INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
+--    (4,  '02/02/2022',   1, 1, 1);
 
 
 
@@ -159,7 +166,7 @@ INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VAL
 
 
 -- DML SELECT
--- Criadas as tabelas, podemos usar o comando SELECT para selecioná-las.
+-- Criadas as tabelas, podemos usar o comando SELECT para selecionï¿½-las.
 
 
 
