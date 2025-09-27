@@ -337,7 +337,7 @@ article .linkPdfAula::before{
 }
 
 .contentCodeView ul, .contentCodeView li{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace, sans-serif;
     color: var(--cor-secundary);
     margin-bottom: 0;
 }

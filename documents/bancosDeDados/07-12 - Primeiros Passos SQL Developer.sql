@@ -45,27 +45,13 @@ Exemplos: INSERT, UPDATE, DELETE, SELECT
 -- Coluna 4: email do tipo VARCHAR2
 -- Coluna 5: data_nascimento do tipo DATE
 
-create TABLE clientes(
+CREATE TABLE clientes(
     id_cliente INT,
     nome_cliente VARCHAR2(50),
     sexo VARCHAR2 (1),
     email VARCHAR2 (50),
     data_nascimento DATE
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 -- Tabela 2: PRODUTOS
 
@@ -78,18 +64,14 @@ create TABLE clientes(
 -- Coluna 5: preco_unit do tipo DECIMAL
 -- Coluna 6: custo_unit do tipo DECIMAL
 
-
-
-
-
-
-
-
-
-
-
-
-
+CREATE TABLE produtos (
+    id_produto INT,
+    nome_produto VARCHAR2(50),
+    marca VARCHAR2(50),
+    categoria VARCHAR2(50),
+    preco_unit NUMBER(10,2),
+    custo_unit NUMBER(10,2)
+);
 
 -- Tabela 3: VENDAS
 
@@ -101,17 +83,13 @@ create TABLE clientes(
 -- Coluna 4: id_produto do tipo INT
 -- Coluna 5: quantidade do tipo DECIMAL
 
-
-
-
-
-
-
-
-
-
-
-
+CREATE TABLE vendas(
+    id_venda INT,
+    data_venda DATE,
+    id_cliente INT,
+    id_produto INT,
+    quantidade NUMBER(10,2)
+);
 
 
 -- DML INSERT INTO
@@ -119,9 +97,11 @@ create TABLE clientes(
 
 -- Preenche a tabela CLIENTES
 
+INSERT INTO clientes( id_cliente, nome_cliente, sexo, email, data_nascimento) VALUES
+(1, 'Iury', 'M', 'iury@gmail.com', TO_DATE('11/10/2001', 'DD/MM/YYYY'));
 
 
-
+SELECT * FROM clientes;
 
 
 
@@ -156,11 +136,6 @@ create TABLE clientes(
 --    (3,  '13/01/2022',   1, 3, 1);
 --INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VALUES
 --    (4,  '02/02/2022',   1, 1, 1);
-
-
-
-
-
 
 
 

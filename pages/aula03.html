@@ -127,12 +127,12 @@
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> clientes (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> clientes(
                                             <ul>
                                                 <li>id_cliente <span class="spanColorBlue">INT</span>,</li>
-                                                <li>nome_cliente <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
-                                                <li>sexo <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">1</span>),</li>
-                                                <li>email <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
+                                                <li>nome_cliente <span class="spanColorBlue">VARCHAR2</span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>sexo <span class="spanColorBlue">VARCHAR2</span>(<span class="spanColorGreen">1</span>),</li>
+                                                <li>email <span class="spanColorBlue">VARCHAR2</span>(<span class="spanColorGreen">50</span>),</li>
                                                 <li>data_nascimento <span class="spanColorBlue">DATE</span></li>
                                             </ul>
                                         <p>);</p>
@@ -158,14 +158,14 @@
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> produtos (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> produtos(
                                             <ul>
                                                 <li>id_produto <span class="spanColorBlue">INT</span>,</li>
-                                                <li>nome_produto <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
-                                                <li>marca <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
-                                                <li>categoria <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
-                                                <li>preco_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
-                                                <li>custo_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                                <li>nome_produto <span class="spanColorBlue">VARCHAR2</span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>marca <span class="spanColorBlue">VARCHAR2</span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>categoria <span class="spanColorBlue">VARCHAR2</span>(<span class="spanColorGreen">50</span>),</li>
+                                                <li>preco_unit <span class="spanColorBlue">NUMBER</span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                                <li>custo_unit <span class="spanColorBlue">NUMBER</span>(<span class="spanColorGreen">10, 2</span>)</li>
                                             </ul>
                                         <p>);</p>
                                         </ul>
@@ -188,13 +188,13 @@
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> vendas (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> vendas(
                                             <ul>
                                                 <li>id_venda <span class="spanColorBlue">INT</span>,</li>
                                                 <li>data_venda <span class="spanColorBlue">DATE</span>,</li>
-                                                <li>id_cliente <span class="spanColorBlue">INT </span>,</li>
-                                                <li>id_produto <span class="spanColorBlue">INT </span>,</li>
-                                                <li>quantidade <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                                <li>id_cliente <span class="spanColorBlue">INT</span>,</li>
+                                                <li>id_produto <span class="spanColorBlue">INT</span>,</li>
+                                                <li>quantidade <span class="spanColorBlue">NUMBER</span>(<span class="spanColorGreen">10, 2</span>)</li>
                                             </ul>
                                         <p>);</p>
                                         </ul>
@@ -225,21 +225,21 @@
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >INSERT INTO</span> clientes (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >INSERT INTO</span> clientes(
                                             <ul>
-                                                <li>id_cliente ,</li>
-                                                <li>nome_cliente ,</li>
-                                                <li>sexo ,</li>
-                                                <li>email ,</li>
+                                                <li>id_cliente,</li>
+                                                <li>nome_cliente,</li>
+                                                <li>sexo,</li>
+                                                <li>email,</li>
                                                 <li>data_nascimento</li>
                                             </ul>
                                         <p>) <span class="spanColorBlue">VALUES</span>(</p>
                                             <ul>
-                                                <li> 1 ,</li>
-                                                <li>' Iury ',</li>
-                                                <li>' M ',</li>
-                                                <li>' iury@gmail.com ',</li>
-                                                <li><span class="spanColorBlue">TO_DATE</span> ( ' 11/10/2001 ', ' DD/MM/YYYY ' )</li>
+                                                <li> 1,</li>
+                                                <li>'Iury',</li>
+                                                <li>'M',</li>
+                                                <li>'iury@gmail.com',</li>
+                                                <li><span class="spanColorBlue">TO_DATE</span>('11/10/2001', 'DD/MM/YYYY')</li>
                                             </ul>
                                             <p>);</p>
                                         </ul>
@@ -247,9 +247,31 @@
                                 </div>
                             </div>
                             <br>
-                            <p><strong>Obs: </strong>No VALUES data_nascimento DATE tivemos que usar o TO_DATE pelos seguinte motivo:</p>
+                            <p><strong>Obs: </strong> <br>No VALUES data_nascimento DATE tivemos que usar o TO_DATE pelos seguinte motivo:</p>
                             <ul>
-                                <li>Quando você insere uma data como string ('11/10/2001'), o banco tenta converter automaticamente usando o formato de data padrão da sua sessão (NLS_DATE_FORMAT). Se o NLS_DATE_FORMAT estiver como YYYY-MM-DD, o Oracle espera '2001-10-11'.</li>
+                                <li>Quando você insere uma data como string ('11/10/2001'), o banco tenta converter automaticamente usando o formato de data padrão da sua sessão (NLS_DATE_FORMAT). Se o NLS_DATE_FORMAT estiver como YYYY-MM-DD, o Oracle espera '2001-10-11'.</li><br>
+
+                                    <p>- Regra especial do DD-MM-RRRR (Diferença)</p>
+                                    <p>O Oracle inventou o RR para facilitar a transição do ano 2000:</p>
+                                    <ul><li>Se você usar YY, ele pega os 2 dígitos e completa com o século atual.</li>
+                                    <li>Se você usar RR, ele tenta adivinhar o século com base na data atual.</li>
+                                    <li>Exemplo (supondo que hoje seja ano 2025):</li>
+                                    <div class="codeViewContainer">
+                                <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
+                                <div class="contentCodeView">
+                                    <br>
+                                    <ul>
+                                        <li>TO_DATE( <span class="spanColorGreen">'49-12-15'</span>,<span class="spanColorGreen">'RR-MM-DD'</span>)  --> 2049-12-15   (ano 2049)</li>
+                                        <li>TO_DATE(<span class="spanColorGreen">'50-12-15'</span>,<span class="spanColorGreen">'RR-MM-DD'</span>)  --> 1950-12-15   (ano 1950)</li>
+                                        <li>TO_DATE(<span class="spanColorGreen">'25-12-15'</span>,<span class="spanColorGreen">'YY-MM-DD'</span>)  --> 2025-12-15   (ano 2025)</li>
+                                    </ul>
+                                </div>
+                                
+                            </ul>
+                                    
+
+
+
                                 <br> 
                                 <p><strong>Dica:</strong></p>
                                 <li>Mesmo que você saiba o formato, é boa prática sempre usar TO_DATE com o formato explícito (DD/MM/YYYY, YYYY-MM-DD, etc.), porque assim seu código funciona em qualquer ambiente, independente da configuração regional.</li>
