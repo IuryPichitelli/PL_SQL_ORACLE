@@ -43,6 +43,7 @@ ul, ol{
 hr{
     width: 80%;
     margin: 20px auto;
+    display: block;
 }
 
 html{
@@ -357,6 +358,16 @@ article .iframeVideo > iframe{
     height: 99%;
     border-radius: 10px 10px 0px 10px;
     outline: 1px solid gray;
+}
+
+.spanTeacherName{
+    float: right;
+    display: block;
+    font-family: var(--font-text);
+    color: var(--cor-secundary);
+    background-color: var(--cor-primary);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .buttonIframeExpansion{
