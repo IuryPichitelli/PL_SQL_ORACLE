@@ -212,6 +212,7 @@
                 <h3>INSERINDO DADOS NAS TABELAS - DML INSERT INTO</h3>
                 <ul>
                     <p>Vamos inserir dados nas três tabelas: clientes, produtos e vendas</p>
+
                     <ul>
                         <p>Tabela 01: <strong>CLIENTES</strong></p>
                         <ul>
@@ -278,31 +279,42 @@
                             </ul>
                         </ul>
                     </ul>
+
                     <hr>
+
                     <ul>
-                        <p>----------------------Tabela 02: <strong>PRODUTOS</strong></p>
+                        <p>Tabela 02: <strong>PRODUTOS</strong></p>
                         <ul>
-                            <p>Tabela PRODUTOS deve conter as seguintes colunas:</p>
-                            <li>Coluna 01: id_produtos do tipo INT</li>
-                            <li>Coluna 02: nome_produto do tipo VARCHAR2</li>
-                            <li>Coluna 03: marca do tipo VARCHAR2</li>
-                            <li>Coluna 04: categoria do tipo VARCHAR2</li>
-                            <li>Coluna 05: preco_unit do tipo NUMBER (p,s)</li>
-                            <li>Coluna 06: custo_unit do tipo NUMBER (p,s)</li>
+                            <p>Tabela PRODUTOS deve conter as seguintes dados:</p>
+                            <li>Coluna 01: id_produto = 1</li>
+                            <li>Coluna 02: nome_produto = 'iPhone 11'</li>
+                            <li>Coluna 03: marca = 'Apple'</li>
+                            <li>Coluna 04: categoria = 'Celular'</li>
+                            <li>Coluna 05: preco_unit = 3500</li>
+                            <li>Coluna 06: custo_unit = 2200</li>
                             <div class="codeViewContainer">
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> produtos (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >INSERT INTO</span> clientes(
                                             <ul>
-                                                <li>id_produto <span class="spanColorBlue">INT</span>,</li>
-                                                <li>nome_produto <span class="spanColorBlue">VARCHAR2</span> (<span class="spanColorGreen">50</span>),</li>
-                                                <li>marca <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
-                                                <li>categoria <span class="spanColorBlue">VARCHAR2 </span>(<span class="spanColorGreen">50</span>),</li>
-                                                <li>preco_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
-                                                <li>custo_unit <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                                <li>id_produto,</li>
+                                                <li>nome_produto,</li>
+                                                <li>marca,</li>
+                                                <li>categoria,</li>
+                                                <li>preco_unit,</li>
+                                                <li>custo_unit</li>
                                             </ul>
-                                        <p>);</p>
+                                        <p>) <span class="spanColorBlue">VALUES</span>(</p>
+                                            <ul>
+                                                <li> 1,</li>
+                                                <li>'iPhone 11',</li>
+                                                <li>'Apple',</li>
+                                                <li>'Celular',</li>
+                                                <li>3500,</li>
+                                                <li>2200</li>
+                                            </ul>
+                                            <p>);</p>
                                         </ul>
                                         
                                     </ul>
@@ -310,36 +322,47 @@
                             </div>
                         </ul>
                     </ul>
+
                     <hr>
+
                     <ul>
                         <p>Tabela 03: <strong>VENDAS</strong></p>
                         <ul>
-                            <p>Tabela PRODUTOS deve conter as seguintes colunas:</p>
-                            <li>Coluna 01: id_venda do tipo INT</li>
-                            <li>Coluna 02: data_venda do tipo DATE</li>
-                            <li>Coluna 03: id_cliente do tipo INT</li>
-                            <li>Coluna 04: id_produto do tipo INT</li>
-                            <li>Coluna 05: quantidade do tipo NUMBER (p,s)</li>
+                            <p>Tabela PRODUTOS deve conter as seguintes dados:</p>
+                            <li>Coluna 01: id_venda = 1</li>
+                            <li>Coluna 02: data_venda = '09/01/2022'</li>
+                            <li>Coluna 03: id_cliente = 3</li>
+                            <li>Coluna 04: id_produto = 1</li>
+                            <li>Coluna 05: quantidade = 2</li>
                             <div class="codeViewContainer">
                                 <div class="codeViewBar"><span class="redCircle"></span><span class="yellowCircle"></span><span class="greenCircle"></span> <span class="textCodeViewBar">sql</span></div>
                                 <div class="contentCodeView">
                                     <ul>
-                                        <ul class="listCodeView"><span class="spanColorBlue" >CREATE TABLE</span> vendas (
+                                        <ul class="listCodeView"><span class="spanColorBlue" >INSERT INTO</span> clientes(
                                             <ul>
-                                                <li>id_venda <span class="spanColorBlue">INT</span>,</li>
-                                                <li>data_venda <span class="spanColorBlue">DATE</span>,</li>
-                                                <li>id_cliente <span class="spanColorBlue">INT </span>,</li>
-                                                <li>id_produto <span class="spanColorBlue">INT </span>,</li>
-                                                <li>quantidade <span class="spanColorBlue">NUMBER </span>(<span class="spanColorGreen">10, 2</span>)</li>
+                                                <li>id_venda,</li>
+                                                <li>data_venda,</li>
+                                                <li>id_cliente,</li>
+                                                <li>id_produto,</li>
+                                                <li>quantidade</li>
                                             </ul>
-                                        <p>);</p>
+                                        <p>) <span class="spanColorBlue">VALUES</span>(</p>
+                                            <ul>
+                                                <li> 1,</li>
+                                                <li>TO_DATE('09/01/2022','DD/MM/RRRR'),</li>
+                                                <li>3,</li>
+                                                <li>1,</li>
+                                                <li>2</li>
+                                            </ul>
+                                            <p>);</p>
                                         </ul>
                                     </ul>
                                 </div>
                             </div>
                         </ul>
                     </ul>
-
+                    
+                    <hr>
                 </ul>
             </ul>
 
