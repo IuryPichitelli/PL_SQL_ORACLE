@@ -38,7 +38,52 @@
             <h2>Anotações da aula</h2>
             <h3>FILTROS AVANÇADOS</h3>
             <ul>
-                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descrição</th>
+                            <th>Exemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tdComandWidth"> * </td>
+                            <td>Termo para selecionar todas as colunas de uma tabela</td>
+                            <td class="tdCodeWidth"><code>SELECT <span class="spanColorBlue">*</span> FROM funcionarios;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>SELECT</td>
+                            <td>Seleciona a coluna que queremos</td>
+                            <td><code><span class="spanColorBlue">SELECT </span>* FROM funcionarios;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>FROM</td>
+                            <td>Usado para referenciar qual tabela iremos extrair os dados</td>
+                            <td><code>SELECT * <span class="spanColorBlue">FROM</span> funcionarios;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>WHERE</td>
+                            <td>Condição (ONDE) que podemos usar para colocar condições na pesquisa</td>
+                            <td><code>SELECT * FROM funcionarios <span class="spanColorBlue">WHERE</span>  id = 2;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>LIKE</td>
+                            <td>Usado para procurar qualquer sequência sendo ela numerica ou alfabetica</td>
+                            <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">LIKE</span> 'Pedro%';</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>LIKE 'x%'</td>
+                            <td>Sequência aonde os caracteres a direita da palavra podem ser qualquer um</td>
+                            <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">LIKE 'Pedro%'</span>;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
             </ul>
         </article>
     </main>

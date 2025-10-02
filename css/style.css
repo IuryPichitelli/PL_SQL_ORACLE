@@ -367,6 +367,38 @@ article .iframeVideo > iframe{
     transition:  transform .1s ease;
 }
 
+/* table */
+
+table{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-text);
+    color: var(--cor-secundary);
+    border: 1px solid gray;
+    background-color: var(--cor-backg);
+    border-collapse: collapse;
+}
+
+th{
+    font-family: var(--font-title);
+    border: 1px solid gray;
+    background-color: var(--cor-primary);
+    padding: 5px;
+}
+
+td{
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.tdCodeWidth{
+  width: 230px;
+}
+
+.tdComandWidth{
+    width: 120px;
+}
+
 /* Container buttons */
 
 .containerButtons{
