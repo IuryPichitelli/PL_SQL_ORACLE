@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Hash de Senha</title>
+    <link rel="stylesheet" href="style.css">
+	<script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Hash de Senha (SHA-256)</h1>
+        <p>A hash da senha é gerada diretamente no seu navegador, usando a Web Crypto API.</p>
+        <div class="input-group">
+            <label for="passwordInput">Digite sua senha:</label>
+            <input type="password" id="passwordInput" placeholder="Sua senha secreta">
+        </div>
+        <button id="hashButton">Gerar Hash</button>
+        <div class="result">
+            <h2>Hash Gerado:</h2>
+            <pre id="hashOutput"></pre>
+        </div>
+    </div>
+    
+</body>
+</html>
