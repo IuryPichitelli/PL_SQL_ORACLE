@@ -95,7 +95,7 @@ header img{
 
 nav{
     background-color: var(--cor-primary);
-    outline: 1px solid gray;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,8 +115,8 @@ nav a{
 }
 
 nav a:hover{
-    background-color: var(--cor-primary-hover);
-    outline: 1px solid gray;
+    
+    border-bottom: 2px solid #bacaff;
 }
 
 nav ul{
@@ -126,6 +126,11 @@ nav ul{
 nav li{
     list-style-type: none;
     margin-left: 10px;
+}
+
+nav ul li a.active {
+    color: #ffffff; /* Cor de destaque para o link ativo */
+    border-bottom: 2px solid #bacaff; /* Sublinha o link ativo */
 }
 
 /**********************************************************************************/
@@ -148,6 +153,7 @@ main{
 .hidden{
     display: none;
 }
+
 
 /**********************************************************************************/
 /*--------------------------------- ARTICLE --------------------------------------*/ 
