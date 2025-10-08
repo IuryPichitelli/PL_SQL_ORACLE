@@ -707,6 +707,11 @@ Em vez de dar cada privilégio individualmente a um usuário, você cria um role
                             <td>Sequência aonde os caracteres a direita da palavra podem ser qualquer um</td>
                             <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">LIKE 'Pedro%'</span>;</code></td>
                         </tr>
+                        <tr>
+                            <td>LIKE 'x_'</td>
+                            <td>Procura por um unico caracter que começe com ele</td>
+                            <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">LIKE 'Pedro_'</span>;</code></td>
+                        </tr>
                     </tbody>
                 </table>
             </ul>
