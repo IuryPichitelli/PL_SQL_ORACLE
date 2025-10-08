@@ -134,3 +134,4 @@ INSERT INTO vendas(id_venda, data_venda, id_cliente, id_produto, quantidade) VAL
 select * from vendas;
 
 
+
