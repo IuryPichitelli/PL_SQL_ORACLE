@@ -156,16 +156,16 @@
             <h2>Tópico 05</h2>
             <h3>Por que aprender SQL?</h3>
             <ul class="listWithH4">
-                <h4>1. É essencial para trabalhar com dados</h4>
+                <h4>1.<strong>É essencial para trabalhar com dados</strong></h4>
                 <li>Bancos de dados estão em tudo: sites, apps, empresas, jogos, e-commerce.</li>
                 <li>Saber SQL te permite buscar, organizar e analisar informações.</li>
-                <h4>2. Habilidade valorizada no mercado</h4>
+                <h4>2. <strong>Habilidade valorizada no mercado</strong></h4>
                 <li>Profissionais que sabem SQL são procurados em TI, análise de dados, marketing, finanças e mais.</li>
                 <li>Serve como base para aprender ferramentas de BI, Big Data e Data Science.</li>
-                <h4>3. É a “linguagem universal” dos bancos de dados relacionais</h4>
+                <h4>3. <strong>É a “linguagem universal” dos bancos de dados relacionais</strong></h4>
                 <li>Mesmo que mude o software (MySQL, PostgreSQL, Oracle…), o SQL continua quase o mesmo.</li>
                 <li>Ou seja, você aprende uma vez e usa em vários lugares.</li>
-                <h4>4. Ajuda a entender como os sistemas funcionam</h4>
+                <h4>4. <strong>Ajuda a entender como os sistemas funcionam</strong></h4>
                 <li>Aprender SQL faz você entender melhor como sites e aplicativos armazenam e recuperam informações.</li>
             </ul>
             <hr>
@@ -707,11 +707,73 @@ Em vez de dar cada privilégio individualmente a um usuário, você cria um role
                             <td>Sequência aonde os caracteres a direita da palavra podem ser qualquer um</td>
                             <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">LIKE 'Pedro%'</span>;</code></td>
                         </tr>
+
                         <tr>
                             <td>LIKE 'x_'</td>
                             <td>Procura por um unico caracter que começe com ele</td>
                             <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">LIKE 'Pedro_'</span>;</code></td>
                         </tr>
+
+                        <tr>
+                            <td>NOT LIKE 'x_' ou 'x%'</td>
+                            <td>Tem a função de negação, tudo que não estiver dentro do parâmetros do LIKE</td>
+                            <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">NOT LIKE 'Pedro_'</span>;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>BETWEEN ... AND</td>
+                            <td>Uma atribuição que usa dois valores e puxa oque está entre eles.</td>
+                            <td><code>SELECT * FROM funcionarios WHERE year <span class="spanColorBlue">BETWEEN 2000 AND 2010</span>;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>NOT BETWEEN … AND</td>
+                            <td>Uma atribuição que usa dois valores e puxa oque NÃO está entre eles.</td>
+                            <td><code>SELECT * FROM funcionarios WHERE year <span class="spanColorBlue">NOT BETWEEN 2000 AND 2010</span>;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>IN (…) (inclusive / ou)</td>
+                            <td>Usado para retornar os valores, podendo ser tanto um ou outro dentro da lista</td>
+                             <td><code>SELECT * FROM funcionarios WHERE sexo <span class="spanColorBlue">IN ('M','F')</span>;</code></td>
+                        </tr> 
+                        
+                        <tr>
+                            <td>NOT IN (…) (não inclusive / ou)</td>
+                            <td>Usado para retornar os valores, podendo ser tanto um ou outro dentro da lista</td>
+                             <td><code>SELECT * FROM funcionarios WHERE name_func <span class="spanColorBlue">NOT IN ('João','Fernanda')</span>;</code></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ORDER BY ... ASC / DESC</td>
+                            <td>Usado para ordernar uma coluna, sendo ela numericamente ou alfabeticamente. Sendo ASC = crescente e DESC = decrescente.</td>
+                             <td><code>SELECT * FROM funcionarios <span class="spanColorBlue">ORDER BY</span> qtd_funcionarios <span class="spanColorBlue">ASC </span>;</code></td>
+                        </tr> 
+
+                        <tr>
+                            <td>DISTINCT</td>
+                            <td>Usado para remover cegamente palavras duplicadas. Também funciona com números, datas, etc..</td>
+                             <td><code>SELECT <span class="spanColorBlue">DISTINCT</span> nome_funcionarios FROM funcionarios;</code></td>
+                        </tr> 
+
+                        <tr>
+                            <td>LIMIT</td>
+                            <td>Usado para reduzir o número de linhas a serem retornadas</td>
+                            <td><code>SELECT * FROM funcionarios <span class="spanColorBlue">LIMIT</span> 5;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>OFFSET</td>
+                            <td>Usado para especificar aonde começará a contagem do número de linhas.</td>
+                            <td><code>SELECT * FROM funcionarios <span class="spanColorBlue">OFFSET</span> 5;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>INNER JOIN & ON</td>
+                            <td>Usado para fazer junções de duas tabelas em uma pesquisa.Cláusula em uma consulta, podemos combinar dados de linhas de duas tabelas separadas usando essa chave exclusiva.</td>
+                            <td><code>SELECT * FROM movies <span class="spanColorBlue"> INNER JOIN</span> boxoffice <span class="spanColorBlue">ON</span> id = movie_id</code></td>
+                        </tr>
+
                     </tbody>
                 </table>
             </ul>
