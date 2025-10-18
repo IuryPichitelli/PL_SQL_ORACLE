@@ -774,8 +774,45 @@ Em vez de dar cada privilégio individualmente a um usuário, você cria um role
                             <td><code>SELECT * FROM movies <span class="spanColorBlue"> INNER JOIN</span> boxoffice <span class="spanColorBlue">ON</span> id = movie_id</code></td>
                         </tr>
 
+                         <tr>
+                            <td>GROUP BY </td>
+                            <td>É usado para agrupar linhas de uma tabela que têm valores iguais em uma ou mais colunas.</td>
+                            <td><code>SELECT movies_name, SUM(cost_movies) <span class="spanColorBlue">AS</span> total_salario FROM movies <span class="spanColorBlue"> GROUP BY</span> movies_name</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>GROUP BY (AGREGAÇÃO)</td>
+                            <td>COUNT() → conta registros , SUM() → soma valores, AVG() → média, MAX() → maior valor, MIN() → menor valor</td>
+                            <td></td>
+                        </tr>
                     </tbody>
-                </table>
+                </table><br>
+                <h2>Anotações da aula</h2>
+                <h3>Aula prática</h3>
+                <ul>
+                    <h4>- Usando COUNT(*)</h4>
+                    <ul>
+                        <p>Para usar o count(*) devemos colocar os seguintes parâmetros</p>
+                    <p>select departamento, count(*) as total_func from funcionarios GROUP BY departamento</p>
+                    <p>HAVING SUM(salario) > 10000;</p>
+                    </ul>
+                    
+                    <h4>- Usando UPDATE</h4>
+                    <ul>
+                        <p>UPDATE funcionarios SET funcao = 'Fiscal' WHERE funcao = 'Auditor'</p>
+                    </ul>
+
+                    <h4>- Usando DELETE</h4>
+                    <ul>
+                        <p>DELETE FROM funcionarios WHERE idade < 25 and upper(departamento) like 'MARKETING%';</p>
+                    </ul>
+
+                    <h4>- Usando CASE, GROUP BY E SELECT</h4>
+                    <ul>
+                        <p>DELETE FROM funcionarios WHERE idade < 25 and upper(departamento) like 'MARKETING%';</p>
+                    </ul>
+                    
+                </ul>
             </ul>
         </article>
     </main>
